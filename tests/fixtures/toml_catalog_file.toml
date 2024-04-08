@@ -1,0 +1,36 @@
+[[shares]]
+name = "public_share_1"
+
+[[shares.schemas]]
+name = "schema1"
+
+[[shares.schemas.tables]]
+name = "table1"
+location = "s3a://<bucket-name>/<table-prefix-1>/"
+id = "00000000-0000-0000-0000-000000000001"
+
+[[shares.schemas.tables]]
+name = "table2"
+location = "s3a://<bucket-name>/<table-prefix-2>/"
+id = "00000000-0000-0000-0000-000000000002"
+
+[[shares.schemas]]
+name = "schema2"
+
+[[shares.schemas.tables]]
+name = "table3"
+location = "s3a://<bucket-name>/<table-prefix-3>/"
+id = "00000000-0000-0000-0000-000000000003"
+
+[[shares]]
+name = "public_share_2"
+schemas = []
+
+[[shares]]
+name = "public_share_3"
+schemas = []
+
+[[shares]]
+name = "private_share_1"
+schemas = []
+recipients = ["recipient1"]

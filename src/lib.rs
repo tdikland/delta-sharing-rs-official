@@ -6,5 +6,6 @@ mod macros;
 pub mod server;
 
 pub mod auth;
+pub mod catalog;
 
 pub const VERSION: &str = git_version::git_version!();

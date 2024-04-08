@@ -1,0 +1,49 @@
+{
+    "shares": [
+        {
+            "name": "public_share_1",
+            "schemas": [
+                {
+                    "name": "schema1",
+                    "tables": [
+                        {
+                            "name": "table1",
+                            "location": "s3a://<bucket-name>/<table-prefix-1>/",
+                            "id": "00000000-0000-0000-0000-000000000001"
+                        },
+                        {
+                            "name": "table2",
+                            "location": "s3a://<bucket-name>/<table-prefix-2>/",
+                            "id": "00000000-0000-0000-0000-000000000002"
+                        }
+                    ]
+                },
+                {
+                    "name": "schema2",
+                    "tables": [
+                        {
+                            "name": "table3",
+                            "location": "s3a://<bucket-name>/<table-prefix-3>/",
+                            "id": "00000000-0000-0000-0000-000000000003"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "public_share_2",
+            "schemas": []
+        },
+        {
+            "name": "public_share_3",
+            "schemas": []
+        },
+        {
+            "name": "private_share_1",
+            "schemas": [],
+            "recipients": [
+                "recipient1"
+            ]
+        }
+    ]
+}
